@@ -53,7 +53,7 @@ async def analyze(file: UploadFile = File(...)):
     res.save(buf, format="PNG")
     img_str = base64.b64encode(buf.getvalue()).decode()
     
-    # 4. // Send the results to the React frontend
+    # 4. // Send the results to the React frontendl
     return {
         "status": "Success", 
         "image": img_str, 
