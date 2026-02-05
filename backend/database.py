@@ -2,7 +2,7 @@ import psycopg2
 
 def connect_db():
     return psycopg2.connect(
-        dbname="vesuvius_db2", # புதிய டேட்டாபேஸ் பெயர்
+        dbname="vesuvius_db2", 
         user="postgres",
         password="1234", 
         host="localhost"
